@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #413f3f; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.container {
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  font-family: 'PT Sans', sans-serif; }
+  .container .title {
+    font-size: 30px;
+    font-weight: bold; }
+  .container .elementsRPS {
+    position: relative;
+    font-size: 20px;
+    display: inline-block; }
+    .container .elementsRPS .elementR {
+      border: 8px solid gray;
+      border-radius: 10px;
+      background-color: gray;
+      min-width: 150px;
+      margin: 0 20px 0 0;
+      float: left; }
+    .container .elementsRPS .elementP {
+      border: 8px solid skyblue;
+      border-radius: 10px;
+      background-color: skyblue;
+      min-width: 150px;
+      margin: 0 20px;
+      float: left; }
+    .container .elementsRPS .elementS {
+      border: 8px solid firebrick;
+      border-radius: 10px;
+      background-color: firebrick;
+      min-width: 150px;
+      margin: 0 0 0 20px;
+      float: left; }
+
+.mainBtnContainer .mainBtn {
+  font-size: 35px;
+  color: #ffffff;
+  border: 5px solid coral;
+  border-radius: 10px;
+  background-color: coral; }
+
+.stats {
+  display: inline-block;
+  height: 90px;
+  width: 700px; }
+  .stats .player {
+    width: 40%;
+    display: table;
+    float: left; }
+  .stats .vs {
+    width: 20%;
+    float: left;
+    margin-top: 30px; }
+  .stats .computer {
+    width: 40%;
+    float: left; }
+
+.hidenConta {
+  position: absolute;
+  top: 0;
+  margin-top: 250px; }
+
+.choice {
+  display: inline-block; }
+  .choice .imgElements {
+    float: left;
+    margin: 0 20px; }
+    .choice .imgElements .btnRPS {
+      border: 5px solid black;
+      background-color: black;
+      color: #ffffff;
+      transition: 0.5s; }
+      .choice .imgElements .btnRPS:hover {
+        border-color: chartreuse; }
+  .choice img {
+    width: 150px; }
+
+@media (max-width: 779px) {
+  .container .elementsRPS .elementR, .container .elementsRPS .elementP, .container .elementsRPS .elementS {
+    float: none;
+    margin: 10px 0;
+    width: 300px; }
+
+  .stats {
+    width: 100%; }
+
+  .hidenConta {
+    margin-top: 370px; }
+
+  .choice .imgElements {
+    margin: 0 5px; }
+  .choice img {
+    width: 90px; } }
+
+/*# sourceMappingURL=style.css.map */
