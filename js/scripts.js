@@ -56,15 +56,17 @@ function newGame() {
 
         playerNameElem.innerHTML = player.name;
         setGamePoints();
+        
+        playerPickElem.innerHTML = "Player selection";
+        playerResultElem.innerHTML = "Player Score";
+        computerPickElem.innerHTML = "Computer selection";
+        computerResultElem.innerHTML = "Computer Score";
+        playerResultElem.style.color = computerResultElem.style.color = '#ffffff';
     }
 }
 
-function playerPick(playerPick) {
-    console.log(playerPick);
-}
-
 var x = Math.random();
-Math.floor(Math.random()*3)
+Math.floor(Math.random() * 3)
 
 function getComputerPick() {
     var possiblePicks = ['rock', 'paper', 'scissors'];
