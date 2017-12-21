@@ -65,12 +65,9 @@ function newGame() {
     }
 }
 
-var x = Math.random();
-Math.floor(Math.random() * 3)
-
 function getComputerPick() {
     var possiblePicks = ['rock', 'paper', 'scissors'];
-    return possiblePicks[Math.floor(Math.random()*3)];
+    return possiblePicks[Math.floor(Math.random() *3 )];
 }
 
 var playerPickElem = document.getElementById('js-playerPick'),
